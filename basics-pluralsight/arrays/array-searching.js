@@ -2,6 +2,7 @@
 const values = [1, 2, 3, 4];
 console.log(values.indexOf(1));
 console.log(values.indexOf(3));
+console.log(values.indexOf(5)); //returns -1
 
 //filter() - goes thru entire array and access each item for the condition in the function. here we are passing function to a method
 const set = values.filter(function(item) {
@@ -14,3 +15,8 @@ const found = values.find(function(item) {
     return item > 3;
 });
 console.log(found);
+
+//forEach()
+values.forEach(function(item) {
+    console.log(item);
+})
